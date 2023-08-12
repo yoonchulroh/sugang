@@ -73,3 +73,7 @@ crashlytics-build.properties
 
 # Modifications
 .vscode/
+/[Aa]ssets/TextMesh\ Pro/
+/[Aa]ssets/TextMesh\ Pro.meta
+.DS_Store
+/[Aa]ssets/.DS_Store
