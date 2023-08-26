@@ -4,6 +4,6 @@ public class UIManager : MonoBehaviour
 {
     public void OnClickRestartButton()
     {
-        GameManager.Instance.timeManager.Restart();
+        GameManager.Instance.Restart();
     }
 }
