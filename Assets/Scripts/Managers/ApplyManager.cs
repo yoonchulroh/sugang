@@ -10,7 +10,7 @@ public class ApplyManager : MonoBehaviour
 
     public void Applied()
     {
-        if (elapsedTime > 10f)
+        if (elapsedTime > 10f && GameManager.Instance.securityManager.CheckInputCode())
         {
             SetScore(elapsedTime - 10f);
         } else {

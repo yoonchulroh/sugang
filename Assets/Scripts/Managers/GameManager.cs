@@ -6,7 +6,8 @@ public class GameManager: MonoBehaviour
     
     public ApplyManager applyManager { get; private set; }
     public TimeManager timeManager { get; private set; }
-    public UIManager UIManager {get; private set; }
+    public UIManager UIManager { get; private set; }
+    public SecurityManager securityManager { get; private set; }
 
     private void Awake()
     {
@@ -21,5 +22,12 @@ public class GameManager: MonoBehaviour
         applyManager = GetComponentInChildren<ApplyManager>();
         timeManager = GetComponentInChildren<TimeManager>();
         UIManager = GetComponentInChildren<UIManager>();
+        securityManager = GetComponentInChildren<SecurityManager>();
+    }
+
+    public void Restart()
+    {
+        timeManager.Restart();
+        securityManager.Restart();
     }
 }
