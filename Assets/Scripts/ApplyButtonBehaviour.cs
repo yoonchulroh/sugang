@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class ApplyButtonBehaviour : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void OnMouseUp()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameManager.Instance.applyManager.Applied();
     }
 }
